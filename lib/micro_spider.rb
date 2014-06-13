@@ -329,7 +329,7 @@ class MicroSpider
 
     def sleep_or_not
       if delay && delay > 0
-        logger.info "Nedd sleep #{delay} sec."
+        logger.info "Need sleep #{delay} sec."
         sleep(delay)
         logger.info 'Wakeup'
       end

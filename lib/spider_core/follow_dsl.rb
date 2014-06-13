@@ -10,7 +10,6 @@ module SpiderCore
         spider = self.spawn
         spider.learn(&block)
         scan_all(kind, pattern, opts).each do |element|
-          binding.pry
           next if skip_followers && skip_followers.include?(element[:href])
           spider.skip_set_entrance = false
           spider.entrance(element[:href])
